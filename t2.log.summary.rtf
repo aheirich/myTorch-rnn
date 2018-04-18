@@ -1,0 +1,574 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww10800\viewh17480\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 qlength=2 sample from elman_2_2014\
+\
+\pard\tx296\pardeftab296\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 x	 43 = b
+\f0 \cf0 \
+
+\f1 \cf2 [torch.LongTensor of size 1x1]
+\f0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\pard\tx296\pardeftab296\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 (110) local h0	nil	x	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 9
+\f0 \cf0 \
+
+\f1 \cf2  -0.6956  1.5047  1.7894  1.0769 -0.0136 -0.4330 -0.0942 -1.1151 -0.3725
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x64]
+\f0 \cf0 \
+\
+
+\f1 \cf2 (129) prev_h	Columns 1 to 26
+\f0 \cf0 \
+
+\f1 \cf2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]\
+Recurrent layer 2 initial conditions
+\f0 \cf0 \
+\
+
+\f1 \cf2 (129) input_dim	64	hidden_dim	1024	
+\f0 \cf0 \
+
+\f1 \cf2 (131) cur_x	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.6956  1.5047  1.7894  1.0769 -0.0136 -0.4330 -0.0942 -1.1151 -0.3725  0.1513
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x64]
+\f0 \cf0 \
+layer 1 a1=z1 input to recurrent layer 2\
+\
+
+\f1 \cf2 (132) next_h	Columns 1 to 26
+\f0 \cf0 \
+
+\f1 \cf2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+\
+
+\f1 \cf2 (132) bias_expand	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 0.01 *
+\f0 \cf0 \
+
+\f1 \cf2   1.1739  2.5911 -4.1072  2.0218 -2.4218 -5.5806  1.4258  2.4524  3.0637 -2.5863
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Bias layer 2\
+\
+
+\f1 \cf2 (132) Wx	Columns 1 to 6
+\f0 \cf0 \
+
+\f1 \cf2  4.3313e-02 -3.6464e-02  1.0896e-01  6.6307e-02  7.1628e-02  1.6874e-01
+\f0 \cf0 \
+layer_2_weights from input to layer 2 (only part of layer_2_weights matrix)\
+
+\f1 \cf2 [torch.FloatTensor of size 64x1024]
+\f0 \cf0 \
+\
+
+\f1 \cf2 (133) next_h from Wx and bias	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -1.6560  1.4292  0.8993  0.5331 -1.0393 -0.0154  1.0536  1.1712  0.1071 -0.9636\
+[torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Z2 without recurrent contribution\
+\
+
+\f1 \cf2 (134) t	1	next_h after adding prev_h Wh	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -1.6560  1.4292  0.8993  0.5331 -1.0393 -0.0154  1.0536  1.1712  0.1071 -0.9636
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Z2\
+\
+
+\f1 \cf2 (135) activation	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.9297  0.8915  0.7160  0.4877 -0.7776 -0.0154  0.7832  0.8246  0.1067 -0.7459
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+A2\
+\
+
+\f1 \cf2 (110) local h0	nil	x	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 9
+\f0 \cf0 \
+
+\f1 \cf2  -0.9297  0.8915  0.7160  0.4877 -0.7776 -0.0154  0.7832  0.8246  0.1067
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x1024]
+\f0 \cf0 \
+Input to layer 3\
+\
+
+\f1 \cf2 (129) prev_h	Columns 1 to 26
+\f0 \cf0 \
+
+\f1 \cf2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Recurrent layer 3 initial conditions\
+\
+
+\f1 \cf2 (129) input_dim	1024	hidden_dim	1024	
+\f0 \cf0 \
+
+\f1 \cf2 (131) cur_x	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.9297  0.8915  0.7160  0.4877 -0.7776 -0.0154  0.7832  0.8246  0.1067 -0.7459
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Layer 3 input from layer 2\
+A2\
+\
+
+\f1 \cf2 (132) next_h	Columns 1 to 26
+\f0 \cf0 \
+
+\f1 \cf2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0\
+[torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Layer 3 recurrent input from layer 3\
+\
+
+\f1 \cf2 (132) bias_expand	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 0.01 *
+\f0 \cf0 \
+
+\f1 \cf2   0.1881  1.7046 -4.1222  1.0591  1.0250  0.2628  0.6949 -1.6058 -2.3197 -0.7484
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Layer 3 bias\
+\
+
+\f1 \cf2 (132) Wx	Columns 1 to 6
+\f0 \cf0 \
+
+\f1 \cf2 -2.7612e-02 -3.9130e-02  7.6504e-02 -4.2310e-02 -1.5281e-02  2.3404e-02
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1024x1024]
+\f0 \cf0 \
+
+\f1 \cf2 Layer 3 weights first 1024 from layer 2\
+\
+(133) next_h from Wx and bias	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -1.8420  2.3286 -5.1654  1.2433 -0.0462  4.4839  0.1939 -2.6986  1.7046 -1.2227
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]\
+Z3 without recurrent contribution
+\f0 \cf0 \
+\
+
+\f1 \cf2 (134) t	1	next_h after adding prev_h Wh	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -1.8420  2.3286 -5.1654  1.2433 -0.0462  4.4839  0.1939 -2.6986  1.7046 -1.2227
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]\
+Z3\
+\
+(135) activation	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.9510  0.9812 -0.9999  0.8464 -0.0461  0.9997  0.1915 -0.9910  0.9360 -0.8405
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+A3\
+\
+
+\f1 \cf2 (178) scores	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 8
+\f0 \cf0 \
+
+\f1 \cf2    2.8972   9.8401  14.8164   4.4572  -6.2972  -5.0602   1.7970  -5.4143
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 9 to 16
+\f0 \cf0 \
+
+\f1 \cf2   16.6576 -29.7984   2.6448 -27.1680   1.0438  -7.4601  14.0836  -4.0106
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 17 to 24
+\f0 \cf0 \
+
+\f1 \cf2   -3.5271 -13.5805  -7.3912   9.0212  17.7231  12.6446  -2.2073   6.5198
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 25 to 32
+\f0 \cf0 \
+
+\f1 \cf2   -7.0321 -10.6736   2.2623  -8.5604  15.6509   9.6664  -7.7643  -8.6509
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 33 to 40
+\f0 \cf0 \
+
+\f1 \cf2   -0.9031  15.1456  -2.4357  -9.0572  -7.8541  13.9269 -18.9223   3.0751
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 41 to 48
+\f0 \cf0 \
+
+\f1 \cf2   -7.7979  -0.6824  11.6833   3.0683 -10.0709  11.2732   4.8322 -11.1430
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 49 to 56
+\f0 \cf0 \
+
+\f1 \cf2    3.7066  -7.3626  -4.5643  15.9740  -8.3526   3.3034  -7.5463  -0.3594
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 57 to 64
+\f0 \cf0 \
+
+\f1 \cf2   -4.8382   7.2657  -7.2548  -3.4258   2.1750  -5.0728   6.5823  -3.6891
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 65 to 65
+\f0 \cf0 \
+
+\f1 \cf2   -5.9385
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x65]
+\f0 \cf0 \
+FIRST OUTPUT LETTER\
+b=21\
+\
+\
+***** START OF SECOND ITERATION ******\
+\
+
+\f1 \cf2 (195) next_char	 21
+\f0 \cf0 \
+
+\f1 \cf2 [torch.LongTensor of size 1x1]\
+This is the char with the highest score from line (178) above
+\f0 \cf0 \
+\
+
+\f1 \cf2 (110) local h0	nil	x	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 9
+\f0 \cf0 \
+
+\f1 \cf2   1.2789 -2.2292  1.7053  0.1825  0.1105  1.0695  0.7501 -0.5230 -1.2715
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x64]
+\f0 \cf0 \
+Layer 1 z1=a1compressed representation of next char 21\
+\
+
+\f1 \cf2 (129) prev_h	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.9297  0.8915  0.7160  0.4877 -0.7776 -0.0154  0.7832  0.8246  0.1067 -0.7459
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Previous A2\
+\
+
+\f1 \cf2 (129) input_dim	64	hidden_dim	1024	
+\f0 \cf0 \
+
+\f1 \cf2 (131) cur_x	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2  1.2789 -2.2292  1.7053  0.1825  0.1105  1.0695  0.7501 -0.5230 -1.2715 -0.9009
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x64]
+\f0 \cf0 \
+Input from layer 1\
+\
+
+\f1 \cf2 (132) next_h	Columns 1 to 26
+\f0 \cf0 \
+
+\f1 \cf2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+\
+
+\f1 \cf2 (132) bias_expand	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 0.01 *
+\f0 \cf0 \
+
+\f1 \cf2   1.1739  2.5911 -4.1072  2.0218 -2.4218 -5.5806  1.4258  2.4524  3.0637 -2.5863\
+[torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Bias layer 2\
+\
+
+\f1 \cf2 (132) Wx	Columns 1 to 6
+\f0 \cf0 \
+
+\f1 \cf2  4.3313e-02 -3.6464e-02  1.0896e-01  6.6307e-02  7.1628e-02  1.6874e-01
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 64x1024]
+\f0 \cf0 \
+Weights layer 2\
+\
+
+\f1 \cf2 (133) next_h from Wx and bias	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2  1.6893 -0.0461 -1.2596  1.3668 -0.9655  1.5814 -1.9116  0.0602  0.0236 -0.1629
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Z2 without recurrent contribution (time 2)\
+\
+
+\f1 \cf2 (134) t	1	next_h after adding prev_h Wh	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2  0.5948  0.3090 -4.0751  1.3774 -2.0841  2.3437  0.4674  0.4674 -0.2291 -0.8112
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Z2 (time 2)\
+\
+
+\f1 \cf2 (135) activation	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2  0.5333  0.2995 -0.9994  0.8804 -0.9695  0.9817  0.4361  0.4361 -0.2251 -0.6702
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+A2 (Time 2)\
+\
+
+\f1 \cf2 (110) local h0	nil	x	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 9
+\f0 \cf0 \
+
+\f1 \cf2   0.5333  0.2995 -0.9994  0.8804 -0.9695  0.9817  0.4361  0.4361 -0.2251
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x1024]
+\f0 \cf0 \
+Input from layer 2 to layer 3\
+\
+
+\f1 \cf2 (129) prev_h	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.9510  0.9812 -0.9999  0.8464 -0.0461  0.9997  0.1915 -0.9910  0.9360 -0.8405
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Previous A3\
+\
+
+\f1 \cf2 (129) input_dim	1024	hidden_dim	1024	
+\f0 \cf0 \
+
+\f1 \cf2 (131) cur_x	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2  0.5333  0.2995 -0.9994  0.8804 -0.9695  0.9817  0.4361  0.4361 -0.2251 -0.6702
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+A2\
+\
+
+\f1 \cf2 (132) bias_expand	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 0.01 *
+\f0 \cf0 \
+
+\f1 \cf2   0.1881  1.7046 -4.1222  1.0591  1.0250  0.2628  0.6949 -1.6058 -2.3197 -0.7484
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Layer 3 bias\
+\
+
+\f1 \cf2 (132) Wx	Columns 1 to 6
+\f0 \cf0 \
+
+\f1 \cf2 -2.7612e-02 -3.9130e-02  7.6504e-02 -4.2310e-02 -1.5281e-02  2.3404e-02
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1024x1024]
+\f0 \cf0 \
+Layer 3 weights input from layer 2 \
+\
+
+\f1 \cf2 (133) next_h from Wx and bias	Columns 1 to 10
+\f0 \cf0 \
+
+\f1 \cf2 -0.6283  0.9637 -0.7429 -4.1052 -2.0411  1.1126 -2.0935 -1.2814  1.1437  0.6828
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1024]
+\f0 \cf0 \
+Z3 without recurrent contribution (time 2)\
+\
+(134) t 1       next_h after adding prev_h Wh   Columns 1 to 10\
+-0.4164  2.3338  0.2875 -3.8905 -4.8192  3.5227 -2.8220 -2.8048  2.8658  3.0963\
+[torch.FloatTensor of size 1x1024]\
+Z3\
+\
+(135) activation        Columns 1 to 10\
+-0.3939  0.9814  0.2798 -0.9992 -0.9999  0.9983 -0.9929 -0.9927  0.9935  0.9959\
+[torch.FloatTensor of size 1x1024]\
+A3\
+\
+
+\f1 \cf2 (200) scores	(1,.,.) = 
+\f0 \cf0 \
+
+\f1 \cf2  Columns 1 to 8
+\f0 \cf0 \
+
+\f1 \cf2   -4.9275   0.5012   4.0724   2.2403   1.1584  17.0943  -8.0742  -1.9490
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 9 to 16
+\f0 \cf0 \
+
+\f1 \cf2   -2.2537 -17.3483  13.2665  14.4947  -5.0842   3.2428   0.4264   3.7855
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 17 to 24
+\f0 \cf0 \
+
+\f1 \cf2  -17.6823   2.8222  -3.7482  16.6994  -1.7720  -0.5870  -6.4450  17.6368
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 25 to 32
+\f0 \cf0 \
+
+\f1 \cf2   -6.5324  -7.8779  15.4414  -2.5400  -6.3748  -1.6064  -8.8492  -8.0111
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 33 to 40
+\f0 \cf0 \
+
+\f1 \cf2   15.1484  -8.3600 -16.9599  -1.1901   9.1486 -12.7302  -6.4461  -5.7154
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 41 to 48
+\f0 \cf0 \
+
+\f1 \cf2   -6.6540  13.8906   0.1498  12.6032  -1.1521  -9.7104  -9.1185  12.4641
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 49 to 56
+\f0 \cf0 \
+
+\f1 \cf2  -11.0602  -0.7046  -0.6651  -6.9471  -5.3248  -5.2475  -4.8197   2.5240
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 57 to 64
+\f0 \cf0 \
+
+\f1 \cf2  -10.1961 -15.0101  -9.5289 -13.0845  -4.5209  -0.9349  -1.6494  -2.0139
+\f0 \cf0 \
+\
+
+\f1 \cf2 Columns 65 to 65
+\f0 \cf0 \
+
+\f1 \cf2   -2.2648
+\f0 \cf0 \
+
+\f1 \cf2 [torch.FloatTensor of size 1x1x65]
+\f0 \cf0 \
+Max = 24 = y\
+\
+
+\f1 \cf2 by	
+\f0 \cf0 \
+}
